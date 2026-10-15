@@ -4,6 +4,14 @@ Sistema web de cadastro e autenticação de usuários, desenvolvido como projeto
 
 Funcionalidades
 
+Capturas de tela
+
+Tela de cadastro
+
+
+
+Tela de login
+
 Cadastro de usuários.
 
 Validação de nome, e-mail e senha.
