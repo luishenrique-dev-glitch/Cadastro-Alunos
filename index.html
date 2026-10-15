@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cadastro de Alunos</title>
+</head>
+
+<body>
+
+    <div class="cartao">
+
+        <!-- FORMULÁRIO DE CADASTRO -->
+        <div id="areaCadastro">
+
+            <h1>Criar sua conta</h1>
+            <h3>Preencha seus dados para continuar</h3>
+
+            <form id="formCadastro">
+
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">E-mail:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="senha">Senha:</label><br>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                    <label for="confirmarSenha" class="label-confirmacao">
+                        Confirme sua senha:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmarSenha"
+                        name="confirmarSenha"
+                        class="input-confirmacao"
+                        placeholder="Digite sua senha novamente"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="botaoSenha"
+                        class="botao-senha"
+                    >
+                        Mostrar senha
+                    </button>
+
+                    <div id="requisitosSenha">
+                        <p id="requisitoTamanho">○ 8 caracteres ou mais</p>
+                        <p id="requisitoNumero">○ Pelo menos um número</p>
+                        <p id="requisitoEspecial">○ Um caractere especial</p>
+                        <p id="requisitoLetra">○ Pelo menos uma letra</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <button type="submit" id="botaoCadastrar">
+                    Cadastrar
+                </button>
+
+                <p id="mensagem"></p>
+                <p id="erro"></p>
+
+            </form>
+
+            <p>Já tem uma conta?</p>
+
+            <button type="button" id="irParaLogin">
+                Fazer login
+            </button>
+
+        </div>
+
+
+        <!-- FORMULÁRIO DE LOGIN -->
+        <div id="areaLogin" hidden>
+
+            <h1>Bem-vindo de volta!</h1>
+            <h3>Entre com seus dados para continuar</h3>
+
+            <form id="formLogin">
+
+                <div>
+                    <label for="emailLogin">E-mail:</label><br>
+                    <input
+                        type="email"
+                        id="emailLogin"
+                        name="emailLogin"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="senhaLogin">Senha:</label><br>
+                    <input
+                        type="password"
+                        id="senhaLogin"
+                        name="senhaLogin"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="botaoSenhaLogin"
+                        class="botao-senha"
+                    >
+                        Mostrar senha
+                    </button>
+                </div>
+
+                <br>
+
+                <button type="submit" id="botaoEntrar">
+                    Entrar
+                </button>
+
+                <p id="mensagemLogin"></p>
+                <p id="erroLogin"></p>
+
+            </form>
+
+            <p>Ainda não tem uma conta?</p>
+
+            <button type="button" id="voltarCadastro">
+                Criar uma conta
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

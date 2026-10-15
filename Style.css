@@ -1,0 +1,144 @@
+h1 {color: black;
+    font-size: 32px;
+    margin-bottom: 8px; 
+    font-weight: 700;}
+
+h3 {color: black;
+    margin-top: 0;
+    font-weight: normal;
+} 
+
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-image: url("Imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+            
+input , button {
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 20px; 
+    font-size: 16px;
+}
+    
+        
+div {margin-bottom: 16px;}
+
+.cartao {
+    width: 100%;
+    padding: 24px; 
+    max-width: 340px; 
+    border-radius: 24px; 
+    background-color: rgba(255, 255, 255, 0.6); 
+    margin: 0 auto;
+    box-shadow: 0 4px 10px gray;
+    border: 1px #e5e7eb;
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px gray;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    cursor: text;
+    box-shadow: 0 0 5px #93c5fd;
+}
+
+button {
+    transition: 0.3s;
+    font-weight: normal;
+}
+
+button:hover {
+    background-color: #dbeafe;
+    cursor: pointer;
+    transform: scale(1.02);
+    color: #1d4ed8;
+    transition: 0.3s;
+}
+
+button:active { 
+    transform: scale(0.95);
+}
+
+label {
+    display: block;
+    margin-bottom: -8px;
+}
+
+#mensagem {
+    color: rgb(6, 137, 30);
+    margin-top: 12px;
+}
+
+#erro {
+    color: red;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#requisitosSenha p {
+    font-size: 13px;
+    color: #333;
+    margin-top: 8px;
+    line-height: 1.6;
+    padding: 4px 0;
+}
+
+@media (max-width: 480px) {
+    .cartao {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.botao-senha {
+    width: auto;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transform: scale(0.95);
+    border: 1px solid gray;
+    margin-top: 4px;
+}
+
+.botao-senha:hover {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.confimarSenha {
+    border-color: #3b82f6;
+    outline: none;
+    cursor: text;
+    box-shadow: 0 0 5px #93c5fd;
+}
+
+.label-confirmacao {
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+}
+
+.input-confirmacao {
+    margin-top: -8px
+
+}
